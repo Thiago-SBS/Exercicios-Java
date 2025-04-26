@@ -7,15 +7,15 @@ public class ex004 {
         Scanner input = new Scanner(System.in);
         System.out.println("Média bimestral\n");
         System.out.println("Primeira nota:");
-        float grade1 = input.nextFloat();
+        float firstCourseWork = input.nextFloat();
         System.out.println("Segunda nota:");
-        float grade2 = input.nextFloat();
+        float secondCourseWork = input.nextFloat();
         System.out.println("Terceira nota:");
-        float grade3 = input.nextFloat();
+        float firstTestGrade = input.nextFloat();
         System.out.println("Quarta nota:");
-        float grade4 = input.nextFloat();
+        float secondTestGrade = input.nextFloat();
 
-        float avarage = (grade1 + grade2 + grade3 + grade4) /4;
+        float avarage = (firstCourseWork + secondCourseWork + firstTestGrade + secondTestGrade) / 4;
         System.out.printf("A média é %.1f", avarage);
     }
 }
