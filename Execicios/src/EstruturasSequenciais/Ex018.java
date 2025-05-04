@@ -2,7 +2,7 @@ package EstruturasSequenciais;
 
 import java.util.Scanner;
 
-public class ex018 {
+public class Ex018 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Informe o tamanho do arquivo (em MB):");

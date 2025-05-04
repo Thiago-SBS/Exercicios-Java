@@ -2,7 +2,7 @@ package EstruturasSequenciais;
 
 import java.util.Scanner;
 
-public class ex005 {
+public class Ex005 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("De um valor em metros para ser convertido para centímetros:");

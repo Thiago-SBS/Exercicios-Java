@@ -1,9 +1,8 @@
 package EstruturasSequenciais;
 
-import java.io.PrintStream;
 import java.util.Scanner;
 
-public class ex006 {
+public class Ex006 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Calculadora de área do trianulo.\n");

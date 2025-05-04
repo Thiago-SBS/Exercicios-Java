@@ -2,7 +2,7 @@ package EstruturasSequenciais;
 
 import java.util.Scanner;
 
-public class ex016 {
+public class Ex016 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Informe o tamanho em m² da área a ser pintada:");

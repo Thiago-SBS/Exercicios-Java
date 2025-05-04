@@ -2,7 +2,7 @@ package EstruturasSequenciais;
 
 import java.util.Scanner;
 
-public class ex010 {
+public class Ex010 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Farenheit para Celsius. \n");

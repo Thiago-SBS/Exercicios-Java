@@ -2,7 +2,7 @@ package EstruturasSequenciais;
 
 import java.util.Scanner;
 
-public class ex002 {
+public class Ex002 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Escolha um número:");

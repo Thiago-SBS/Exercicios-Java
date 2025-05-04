@@ -2,7 +2,7 @@ package EstruturasSequenciais;
 
 import java.util.Scanner;
 
-public class ex015 {
+public class Ex015 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Informe quanto você recebe por hora:");

@@ -2,7 +2,7 @@ package EstruturasSequenciais;
 
 import java.util.Scanner;
 
-public class ex004 {
+public class Ex004 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Média bimestral\n");

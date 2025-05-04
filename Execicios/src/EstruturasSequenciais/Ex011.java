@@ -2,7 +2,7 @@ package EstruturasSequenciais;
 
 import java.util.Scanner;
 
-public class ex011 {
+public class Ex011 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Informe um números inteiros:");
