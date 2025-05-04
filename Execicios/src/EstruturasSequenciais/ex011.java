@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class ex011 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Informe 2 números inteiros e um numero quebrado:");
-
+        System.out.println("Informe um números inteiros:");
         int firstNumber = input.nextInt();
+        System.out.println("Informe outro número inteiro:");
         int secondNumber = input.nextInt();
+        System.out.println("Agora informe um numero quebrado:");
         float thirdNumber = input.nextFloat();
 
         float firstResult = (firstNumber * 2) + (secondNumber / 2);
