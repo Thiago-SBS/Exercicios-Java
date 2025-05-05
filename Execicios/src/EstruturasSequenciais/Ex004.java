@@ -15,7 +15,7 @@ public class Ex004 {
         System.out.println("Quarta nota:");
         float fourthTestGrade = input.nextFloat();
 
-        float avarage = (firstTestGrade + fourthTestGrade + thirdTestGrade + fourthTestGrade) / 4;
+        float avarage = (firstTestGrade + secondTestGrade + thirdTestGrade + fourthTestGrade) / 4;
         System.out.printf("A média é %.1f", avarage);
     }
 }
