@@ -12,6 +12,8 @@ public class Ex001 {
 
         if (firstNumber > secondNumber) {
             System.out.println("O maior número é: " + firstNumber);
+        } else if (firstNumber == secondNumber) {
+            System.out.println("Ambos os números tem o mesmo valor.");
         } else {
             System.out.println("O maior número é: " + secondNumber);
         }

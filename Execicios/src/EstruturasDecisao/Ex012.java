@@ -29,7 +29,6 @@ public class Ex012 {
         double totalDiscont = ir + inss + fgts;
         double netSalary = grosSalary - ir - inss;
 
-
         System.out.printf("\nSalário Bruto: R$%.2f",grosSalary);
         System.out.printf("\n(-) IR (5%%): R$%.2f", ir);
         System.out.printf("\n(-) INSS (10%%): R$%.2f",inss);
