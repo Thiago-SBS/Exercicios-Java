@@ -7,7 +7,7 @@ public class Ex005 {
         Scanner input = new Scanner(System.in);
         System.out.println("Informe a primeira nota:");
         double firstTestGrade = input.nextDouble();
-        System.out.println("Informe a segunda nota");
+        System.out.println("Informe a segunda nota:");
         double secondTestGrade = input.nextDouble();
 
         double avarage = (firstTestGrade + secondTestGrade) / 2;
