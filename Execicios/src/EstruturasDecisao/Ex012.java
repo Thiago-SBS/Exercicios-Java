@@ -29,11 +29,12 @@ public class Ex012 {
         double totalDiscont = ir + inss + fgts;
         double netSalary = grosSalary - ir - inss;
 
-        System.out.printf("\nSalário Bruto: R$%.2f",grosSalary);
-        System.out.printf("\n(-) IR (5%%): R$%.2f", ir);
-        System.out.printf("\n(-) INSS (10%%): R$%.2f",inss);
-        System.out.printf("\nFGTS (11%%): R$%.2f",fgts);
+        System.out.println("===== Bilhete de pagamento =====");
+        System.out.printf("\nSalário Bruto:      R$%.2f",grosSalary);
+        System.out.printf("\n(-) IR (5%%):        R$%.2f", ir);
+        System.out.printf("\n(-) INSS (10%%):     R$%.2f",inss);
+        System.out.printf("\nFGTS (11%%):         R$%.2f",fgts);
         System.out.printf("\nTotal de descontos: R$%.2f", totalDiscont);
-        System.out.printf("\nSalário Liquido: R$%.2f",netSalary);
+        System.out.printf("\nSalário Liquido:    R$%.2f",netSalary);
     }
 }
