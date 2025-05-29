@@ -11,9 +11,9 @@ public class Ex015 {
         int hoursWorked = input.nextInt();
 
         double grossSalary = hourlyValue * hoursWorked;
-        double ir = (11 * 100) / grossSalary;
-        double inss = (8 * 100) / grossSalary;
-        double syndicate = (5 * 100) / grossSalary;
+        double ir = (11.0 / 100) * grossSalary;
+        double inss = (8.0 / 100) * grossSalary;
+        double syndicate = ( 5.0 / 100) * grossSalary;
         double netSalary = grossSalary - ir - inss - syndicate;
 
 
