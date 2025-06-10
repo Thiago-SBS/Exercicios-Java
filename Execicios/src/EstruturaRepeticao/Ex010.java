@@ -18,6 +18,7 @@ public class Ex010 {
             for (int j = 0; j < letters.length; j++) {
                 if (String.valueOf(c).equals(letters[j])) {
                     result += numbers[j];
+                    break;
                 }
             }
         }
