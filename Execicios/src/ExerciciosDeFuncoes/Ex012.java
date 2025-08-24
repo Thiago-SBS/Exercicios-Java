@@ -29,7 +29,6 @@ public class Ex012 {
 
                 character = (int)(Math.random() * word.length());
 
-
             }
 
             scrambledWord += word.charAt(character);
