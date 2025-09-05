@@ -2,55 +2,66 @@ package ExerciciosComStrings;
 
 import java.util.*;
 
-public class Ex011 {
+public class Ex013 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         Random random = new Random();
-
-        int wordDraw = random.nextInt(words.size());
-        String wordGallows = words.get(wordDraw).toUpperCase();
 
         int errors = 0;
         int maxErrors = 6;
         List<String> attempts = new ArrayList<>();
 
-        List<Character> progress = new ArrayList<>();
-        for (int i = 0; i < wordGallows.length(); i++) {
-            progress.add('_');
-        }
+        int wordDraw = random.nextInt(words.size());
+        String wordGallows = words.get(wordDraw);
+        String scrambledWord = shuffle(wordGallows);
 
-        System.out.println("===== Jogo da Forca =====");
+        System.out.println("-=- Jogo da palavra embaralhada -=- \n");
 
-        while (errors < maxErrors && progress.contains('_')) {
-            System.out.println("Palavra: " + progress.toString().replaceAll(",", ""));
+        while (errors < maxErrors && !attempts.contains(wordGallows)) {
+            System.out.println("Palavra: " + scrambledWord + "\n");
             System.out.println("Erros: " + errors + "/" + maxErrors);
-            System.out.println("Letras já usadas: " + attempts);
-            System.out.println("Digite uma letra: ");
-            String letter = input.next().toUpperCase();
+            System.out.println("Que palavra é essa?");
+            String word = input.nextLine();
 
-            if (attempts.contains(letter)) {
-                System.out.println("Você ja tentou essa letra.\n");
+            if (attempts.contains(word)) {
+                System.out.println("Você ja tentou essa palavra.\n");
                 continue;
             }
 
-            attempts.add(letter);
+            attempts.add(word);
 
-            if (wordGallows.indexOf(letter) >= 0) {
-                for (int i = 0; i < wordGallows.length(); i++) {
-                    if (wordGallows.charAt(i) == letter.charAt(0)) {
-                        progress.set(i, letter.charAt(0));
-                    }
-                }
-                System.out.println("Você acertou a letra!");
-            } else {
+            if (!attempts.contains(wordGallows)) {
                 errors++;
-                System.out.println("Você errou!");
+                System.out.println("Você errou, tente novamente.\n");
+            }
+            if (errors == maxErrors) {
+                System.out.println("Você perdeu, a palavra era: " + wordGallows);
             }
         }
 
         if (errors != maxErrors) {
             System.out.println("\nParabéns! Você acertou: " + wordGallows + ".");
         }
+    }
+
+    public static String shuffle(String word) {
+
+        List<Integer> characters = new ArrayList<>();
+        String scrambledWord = "";
+
+        for (int i = 0; i < word.length(); i++) {
+
+            int character = 0;
+
+            while (characters.contains(character)) {
+                character = (int)(Math.random() * word.length());
+            }
+
+            scrambledWord += word.charAt(character);
+            characters.add(character);
+        }
+
+        return  scrambledWord;
     }
 
     public static List<String> words = Arrays.asList(
